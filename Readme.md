@@ -24,7 +24,7 @@ https://github.com/ChrisMFlood/Full-stack-RoboRacer-Autonomous-Racing-System/raw
 
 ### Overtaking
 
-https://github.com/ChrisMFlood/Full-stack-RoboRacer-Autonomous-Racing-System/raw/main/Videos/Overtaking/Dynamic%20Opponent.mp4
+https://github.com/ChrisMFlood/Full-stack-RoboRacer-Autonomous-Racing-System/Videos/Overtaking/Dynamic%20Opponent.mp4
 
 [Download Video](Videos/Overtaking/Dynamic%20Opponent.mp4)
 

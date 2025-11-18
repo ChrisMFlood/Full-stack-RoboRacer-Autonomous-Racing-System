@@ -1,5 +1,12 @@
 # Full-stack RoboRacer Autonomous Racing System
 
+## Controllers
+### Pure Pursuit
+
+### Stanley
+
+### MPC
+
 ## Overtaking Demo
 
 *Dynamic Opponent overtaking demonstration*

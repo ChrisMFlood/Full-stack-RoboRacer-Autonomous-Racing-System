@@ -3,7 +3,9 @@
 ### Controllers
 #### Pure Pursuit
 
-https://github.com/ChrisMFlood/Full-stack-RoboRacer-Autonomous-Racing-System/raw/main/Videos/Controllers/PurePursuit.mp4
+[![Watch the video](https://raw.githubusercontent.com/ChrisMFlood/Full-stack-RoboRacer-Autonomous-Racing-System/readme/Videos/Controllers/PurePursuit.mp4)]
+
+<!-- https://github.com/ChrisMFlood/Full-stack-RoboRacer-Autonomous-Racing-System/raw/main/Videos/Controllers/PurePursuit.mp4 -->
 
 [Download Video](Videos/Controllers/PurePursuit.mp4)
 

@@ -3,9 +3,22 @@
 ## Controllers
 ### Pure Pursuit
 
+https://github.com/user-attachments/assets/c34f4acd-3b0c-43f2-9b01-719ac0510395
+
+
 ### Stanley
 
+
+
+https://github.com/user-attachments/assets/a8eec32b-e657-400a-aeb5-f65f47a364ef
+
+
+
 ### MPC
+
+
+https://github.com/user-attachments/assets/28eb1353-52ac-46d3-957c-25639fd9ce01
+
 
 ## Overtaking Demo
 

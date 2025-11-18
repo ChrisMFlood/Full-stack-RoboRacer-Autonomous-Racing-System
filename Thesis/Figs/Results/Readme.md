@@ -12,6 +12,10 @@ pip install -r requirements.txt
 
 Most scripts are configured to save plots as PDF files with transparent backgrounds, suitable for inclusion in a LaTeX document.
 
+**Note:** Some scripts contain hardcoded file paths. You may need to modify the paths within the scripts to match your local directory structure before running them.
+
+
+
 ## Running the Scripts
 
 ### 1. Particle Filter Results
@@ -36,6 +40,33 @@ python pf/pf_results.py
 - A LaTeX table will be printed to the console.
 
 ### 2. Global Trajectory Planning
+
+#### a) Centerline Extraction
+This script extracts the centerline from the racetrack maps
+
+**Script:** `centerline\extract.py`
+
+**Description:**
+This script converts the map images and their YAML metadata into a usable centreline representation for global planning and plotting. Starting from the raw map (PGM) and the associated map YAML (scale, origin, and occupied thresholds), the script:
+
+- loads the occupancy grid and applies preprocessing (optional smoothing / thresholding) to reduce noise;
+- identifies the drivable corridor and computes a medial axis / skeleton of the free space;
+- traces and orders the skeleton to produce a single continuous centreline (or a best-fit path through multiple components);
+- resamples and smooths the centreline to a regular spatial step and computes cumulative arc-length (s) and heading; and
+- writes the resulting centreline CSV files used throughout the repo (for example `_centreline.csv`) into the `maps/` or `centerline_process/` folders.
+
+Typical inputs: the map image (e.g. `map3.pgm`) and its YAML (`map3.yaml`). Typical outputs: a CSV file containing x,y coordinates of the centreline, associated headings, and optionally meta-files used by downstream planners.
+
+Usage example (run from repository root):
+```bash
+python centerline/extract.py --map maps/map3.yaml --out maps/map3_centreline.csv
+```
+
+Notes:
+- The script includes parameters to control smoothing, sampling distance and connectivity thresholds. Adjust these if the extracted centreline contains short disconnected segments or excessive jitter.
+- The produced centreline files are consumed by `global_planning/track.py` and other planning utilities; keep a copy of the raw centreline in `centerline_process/` if you want to re-run later analysis or different smoothing settings.
+
+#### b) Global Planning
 
 This script generates plots comparing different global trajectory planning methods.
 

@@ -1,0 +1,20 @@
+# Requirements for Results Analysis
+# This file contains all the Python packages needed to run the reults.ipynb notebook
+
+# Core scientific computing libraries
+numpy>=1.26.0
+matplotlib>=3.8.0
+scipy>=1.11.0
+numba>=0.59.0
+
+# Data format handling
+PyYAML>=6.0
+
+# Jupyter notebook support
+jupyter>=1.0.0
+ipython>=7.0.0
+
+# Optional: Additional packages that may be useful for similar analysis
+pandas>=2.2.0  # For data manipulation (if needed in future)
+
+# Jupyter and IPython are not strictly required for script execution, only for notebooks

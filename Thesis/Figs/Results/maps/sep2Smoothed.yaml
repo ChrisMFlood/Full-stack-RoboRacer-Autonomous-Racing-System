@@ -1,0 +1,7 @@
+free_thresh: 0.25
+image: sep2Smoothed.png
+mode: trinary
+negate: 0
+occupied_thresh: 0.65
+origin: [-6.17, -1.79, 0]
+resolution: 0.002
